@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-box">
+        <p>Ingrese el texto aquí</p>
+    </div>
+    <div class="container">
+        <div class="input-area">
+            <input type="text" id="input" placeholder="Ingrese texto aquí">
+        </div>
+        <div class="button-container">
+            <button onclick="encrypt()">Encriptar</button>
+            <button onclick="decrypt()">Desencriptar</button>
+        </div>
+    </div>
+    <div class="result-rectangle" id="result-rectangle">
+        <div id="waiting-state">
+            <img id="muneco" src="imagen desen.jpeg" alt="Muñeco esperando">
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div id="result-state">
+            <h3>Resultado:</h3>
+            <p id="rectangle-result-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
